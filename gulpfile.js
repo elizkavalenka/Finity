@@ -1,38 +1,29 @@
 let gulp = require('gulp'),
-    pug = require('gulp-pug'),
-    stylus = require('gulp-stylus'),
+    pug = require('gulp-pug');
+    // stylus = require('gulp-stylus'),
     browserSync = require('browser-sync');
+
+
+
+gulp.task('pug', function () {
+    return gulp.src('src/*.pug')
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest('src'))
+});
 
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: 'app'
+            baseDir: 'src'
         }
     });
-    gulp.watch('app/*.html').on("change", browserSync.reload);
-});
-
-
-gulp.task('pug', function () {
-    return gulp.src('app/*.pug')
-        .pipe(pug({
-            pretty: true
-        }))
-        .pipe(gulp.dest('app'))
-});
-
-gulp.task('cssstyl', function () {
-    gulp.src('./css/style.styl')
-      .pipe(stylus())
-      .pipe(gulp.dest('./css'));
+    gulp.watch('src/*.html').on("change", browserSync.reload);
 });
 
 gulp.task('watch', function () {
-    gulp.watch('css/style.css',['cssstyl']);
-    gulp.watch('css/**/*.css',['concatCss']);
-   	gulp.watch('dist/all.css',['cssmin']);
-    gulp.watch('app/*.pug', gulp.parallel('pug'));
-    
+    gulp.watch('src/*.pug', gulp.parallel('pug'));
 });
 
 

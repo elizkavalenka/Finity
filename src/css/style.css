@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('CircularStd-Book.eot');
+    src: local('Circular Std Book'), local('CircularStd-Book'),
+        url('CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('CircularStd-Book.woff2') format('woff2'),
+        url('CircularStd-Book.woff') format('woff'),
+        url('CircularStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('CircularStd-Medium.eot');
+    src: local('Circular Std Medium'), local('CircularStd-Medium'),
+        url('CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CircularStd-Medium.woff2') format('woff2'),
+        url('CircularStd-Medium.woff') format('woff'),
+        url('CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('CircularStd-Bold.eot');
+    src: local('Circular Std Bold'), local('CircularStd-Bold'),
+        url('CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CircularStd-Bold.woff2') format('woff2'),
+        url('CircularStd-Bold.woff') format('woff'),
+        url('CircularStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Circular Std', Arial, sans-serif;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Circular Std';
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #1d293f;
+}
+
+.wrapper ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper ul li {
+    margin-right: 30px;
+}
+
+.container {
+    text-align: center;
+}
+.button {
+    background-color: #0f53fa;
+    border-radius: 5px;
+    height: 45px;
+    padding: 8px 13px;
+    color: #fff;
+}
+
+.promo h1 {
+    font-size: 58px;
+    line-height: 64px;
+    font-weight: 700;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.promo h2 {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #7c8087;
+}
