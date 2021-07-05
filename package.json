@@ -1,0 +1,19 @@
+{
+  "name": "testalmus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "gulp-stylus": "^2.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
