@@ -1,0 +1,72 @@
+.place
+    margin 0 auto
+    padding-top 237px
+    background-color #fff
+    .container
+        display flex
+        flex-basis 550px
+        justify-content space-between
+    .circle
+        width 612px
+        height 612px
+        background-color #ffd166
+        border-radius 50%
+        z-index -99
+    &__descr
+        padding-top 136px
+        width 409px
+        .text
+            margin-bottom 58px
+        &-list
+            list-style-type none
+        &-item
+            display flex
+            align-items center
+            margin-bottom 19px
+            font-size 24px
+            line-height 34px
+            font-weight 500
+            color #1d293f
+        &-round
+            width 59px
+            height 59px
+            border-radius 50%
+            background-color #f7f8fa
+            display flex
+            justify-content center
+            align-items center
+            margin-right 19px
+    &__media
+        position relative
+
+    &-img-big
+        position absolute
+        left 198px
+        top 54px
+        width 610px
+        height 612px
+        z-index 0
+        border-radius 15px
+        box-shadow -3.345px 31.825px 84px 0px rgba(29, 41, 63, 0.19)
+
+    &-img-small
+        position absolute
+        left 53px
+        top 143px
+        z-index 1
+        transform rotate(-9deg)
+        border-radius 15px
+        box-shadow -3.345px 31.825px 84px 0px rgba(29, 41, 63, 0.19)
+
+.outline
+    width 42px
+    height 25px
+    background-color #ffd166
+    border-radius 5px
+    font-size 13px
+    line-height 1.2
+    font-weight 700
+    margin-left 15px
+    display flex
+    justify-content center
+    align-items center

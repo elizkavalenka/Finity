@@ -7,36 +7,141 @@ html(lang="en")
         title Document
         link(rel='stylesheet' href='css/style.css')
     body
-        header
-            .wrapper
-                .logo
-                    img(src='img/header/logo.svg' alt='logo')
-                nav 
-                    ul
-                        li Demos
-                        li Pages
-                        li Support
-                        li
-                            a.button Start 14 Days Free Trial
-        section.promo
-            .container
+    header
+        .wrapper
+            .logo
+                a.nav-item_link(href='#')
+                    img(src='img/header/logo.png' alt='logo')
+            nav
+                ul.nav-list
+                    li.nav-item
+                        a.nav-item_link(href='#') Demos
+                    li.nav-item
+                        a.nav-item_link(href='#') Pages
+                    li.nav-item
+                        a.nav-item_link(href='#') Support
+                    li.nav-item
+                        a.button.button-mini(href='#') Start 14 Days Free Trial
+    
+    section.promo
+        .container
+            .promo__descr
                 h1 More than your regular email inbox
-                h2
+                .promo__descr-text
                     | We've helped over 25,000 individuals and companies to grow their business successfully.
-                a.button Start 14 Days Free Trial
-                h3 No credit card required
+                a.button.promo__button(href='#') Start 14 Days Free Trial
+                .promo__descr-text-mini No credit card required
+            .promo__media
+                .promo__circle
+                img(src='img/promo/promo-bg.png' alt='promo-bg')
+                .promo__rectangle
+    
+    section.feature
+        .container
+            .companies 
+                img(src='img/feature/companies/GeekWire.png' alt='GeekWire')
+                img(src='img/feature/companies/Slack.png' alt='Slack')
+                img(src='img/feature/companies/Envato.png' alt='Envato')
+                img(src='img/feature/companies/UsaToday.png' alt='UsaToday')
+                img(src='img/feature/companies/Forbes.png' alt='Forbes')
+            h2.title
+                | Solution made for you
+            p.feature__text
+                | These companies release their own versions of the operating systems with minor changes, and yet always.
+            .feature__carousel
+                .card
+                    .card-img
+                        img(src='img/feature/TeamColoboration.svg' alt='TeamColoboration')
+                    .card-descr
+                        .card-name
+                            | Find Leads
+                        p
+                            | We've helped over 2,500 job seekers to get into the most popular tech teams.
+                .card
+                    .card-img
+                        img(src='img/feature/TeamColoboration.svg' alt='TeamColoboration')
+                    .card-descr
+                        .card-name
+                            | Team Collaboration
+                        p
+                            | We've helped over 2,500 job seekers to get into the most popular tech teams.
+                .card
+                    .card-img
+                        img(src='img/feature/InstantChat.svg' alt='InstantChat')
+                    .card-descr
+                        .card-name
+                            | Instant Chat
+                        p
+                            | We've helped over 2,500 job seekers to get into the most popular tech teams.
+                .card
+                    .card-img
+                        img(src='img/feature/MediaManage.svg' alt='MediaManage')
+                    .card-descr
+                        .card-name
+                            | Media Manage
+                        p
+                            | We've helped over 2,500 job seekers to get into the most popular tech teams.
+                .card
+                    .card-img
+                        img(src='img/feature/DedicatedStorage.svg' alt='DedicatedStorage')
+                    .card-descr
+                        .card-name
+                            | Dedicated Storage
+                        p
+                            | We've helped over 2,500 job seekers to get into the most popular tech teams.
+            a.button.feature__button(href='#')
+                img(src='img/feature/Button-img.svg' alt='Button-img')
+                | See Finity in Action
+    
+    section.place
+        .container
+            .place__descr
+                h2.title
+                    | Get all your emails in a single place
+                .text
+                    | These companies release their own versions of the operating systems with minor changes, and yet always with the same bottom line.
+                ul.place__descr-list
+                    li.place__descr-item
+                        .place__descr-round
+                            img(src='img/place/Connect.svg')
+                        p Connect with new people
+                    li.place__descr-item
+                        .place__descr-round
+                            img(src='img/place/Chance.svg')
+                        p Increase chance to engage
+                    li.place__descr-item
+                        .place__descr-round
+                            img(src='img/place/Storage.svg')
+                        p Unlimited storage 
+                        p.outline PRO
+            .place__media
                 .circle
-                .rectangle
-                img(src='' alt='promo')
-                .descr
-                    | These companies release their own versions of the operating systems with minor changes, and yet always.
-                .carousel
-                    .wrapper
-                        .card
-                            .card-name Team Collaboration
-                            .card-img
-                            img(src='' alt='promo')
-                            .card-descr We've helped over 2,500 job seekers to get into the most popular tech teams.
-                a.button
-                    img(src='' alt='promo')
-                    |   See Finity in Action 
+                img.place-img-big(src='img/place/place-img-big.png' alt='place-big')
+                img.place-img-small(src='img/place/place-img-small.png' alt='place-small')
+    
+    section.work
+        .container
+            .work__media
+                .work__media-circle
+                img.work-img-big(src='img/work/work-img-big.png' alt='work-big')
+                img.work-img-small(src='img/work/work-img-small.png' alt='work-small')
+            .work__descr
+                h2.title
+                    | Work anywhere, with any device
+                .text
+                    | These companies release their own versions of the operating systems with minor changes, and yet always with the same bottom line.
+                a.button.work__button(href='#')
+                    img(src='img/work/apple.svg' alt='apple')
+                    .button-text
+                        p.get Download on the
+                        p.shop App Store
+                a.button.work__button.work__button-g(href='#')
+                    img(src='img/work/g-store.png' alt='google')
+                    .button-text
+                        p.get Get it on
+                        p.shop Google Play
+    // <div class="circle"></div>
+    
+    //- section.reviews
+    //- .container
+
