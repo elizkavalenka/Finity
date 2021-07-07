@@ -1,13 +1,7 @@
-
 .work
-    margin 0 auto
-    padding-top 219px
-    padding-bottom 198px
-    background-color #fff
+    margin 0 auto 198px
     .container
         display flex
-        flex-basis 550px
-        justify-content space-between
     .circle
         width 542px
         height 542px
@@ -18,53 +12,67 @@
         top 321px
     &__media
         position relative
-        &-circle
-            width 504px
-            height 504px
-            background-color #37def5
-            border-radius 50%
-            z-index -99
+    &-circle
+        width 504px
+        height 504px
+        background-color #37def5
+        border-radius 50%
+        z-index -99
     &-img-big
         position absolute
-        top -57px
+        top -44px
+        left 82px
         z-index 0
         transform rotate(6deg)
         border-radius 15px
         width 315px
         height 580px
         object-fit cover
-        object-position 20% 0%
+        object-position top
         box-shadow -3.345px 31.825px 84px 0px rgba(29, 41, 63, 0.19)
     &-img-small
         position absolute
-        right -27px
-        bottom 126px
+        right -29px
+        bottom 160px
         z-index 1
         transform rotate(-4deg)
         border-radius 15px
         box-shadow -3.345px 31.825px 84px 0px rgba(29, 41, 63, 0.19)
-
     &__descr
         padding-top 55px
         width 380px
+        margin-left 131px
         .text
             margin-bottom 59px
-
     &__button
-        width 239px
-        height 75px
+        text-decoration none
+        width 240px
+        height 76px
         border 2px solid #e2e4e8
         border-radius 5px
         display flex
+        justify-content space-evenly
         align-items center
         color #fff
         margin-bottom 15px
+        background-color #0f53fa
         .button-text
-            margin-left 23px
-    &__button-g
-        background-color #fff
-        .button-text
+            // margin-left 23px
+            // padding-top 12px
             .get
-                color #7c8087
+                line-height 0.8
+                margin-bottom 13px
             .shop
-                color #1d293f
+                font-weight bold
+                font-size 24px
+        &-white
+            background-color #fff
+            .button-text
+                .get
+                    color #7c8087
+                .shop
+                    color #1d293f
+        &:hover
+            transform scale(1.1)
+            img
+                animation shop 0.5s ease infinite
