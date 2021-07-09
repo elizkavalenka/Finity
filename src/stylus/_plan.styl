@@ -1,12 +1,13 @@
 .plan
     padding-top 153px
-    margin 0 auto 121px
+    margin 0 auto
+    overflow hidden
     &__header
         display flex
         justify-content space-between
         margin-bottom 42px
         .title
-            width 400px
+            max-width 410px
         .plan-switch
             border 3px solid #FFD166
             border-radius 10px
@@ -23,29 +24,32 @@
                 text-decoration none
             .switch-monthly
                 background #FFF
+    &__descr
+        margin-bottom 142px
     .variant
         display flex
         justify-content space-between
         margin-bottom 33px
         &__name
-            font-size 21px
-            line-height 34px
+            font-size 1.2em
+            line-height 1.6
             font-weight bold
+            width 100px
         &__list
-            font-size 18px
             line-height 40px
+            width 190px
             li
                 list-style-type none
         &__cost
-            font-size 58px
-            line-height 64px
+            font-size 3.2em
+            line-height 1.1
             font-weight 500
             letter-spacing -0.017em
             p
-                font-size 16px;
-                line-height 24px
+                // font-size 0.9em
+                line-height 1.5
                 font-weight normal
                 color #7c8087
-                width 110px
-.divider-plan
-    margin-bottom 35px
+                width 115px
+    .divider-plan
+        margin-bottom 35px

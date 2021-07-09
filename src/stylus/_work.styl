@@ -2,6 +2,7 @@
     margin 0 auto 198px
     .container
         display flex
+        justify-content space-between
     .circle
         width 542px
         height 542px
@@ -41,14 +42,12 @@
     &__descr
         padding-top 55px
         width 380px
-        margin-left 131px
         .text
             margin-bottom 59px
     &__button
         text-decoration none
         width 240px
         height 76px
-        border 2px solid #e2e4e8
         border-radius 5px
         display flex
         justify-content space-evenly
@@ -64,8 +63,9 @@
                 margin-bottom 13px
             .shop
                 font-weight bold
-                font-size 24px
+                font-size 1.3em
         &-white
+            border 2px solid #e2e4e8
             background-color #fff
             .button-text
                 .get
@@ -75,4 +75,4 @@
         &:hover
             transform scale(1.1)
             img
-                animation shop 0.5s ease infinite
+                animation dance 0.5s ease infinite

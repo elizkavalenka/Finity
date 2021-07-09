@@ -1,5 +1,4 @@
 .reviews
-    height 912px
     background #F7F8FA
     padding-top 139px
     position relative
@@ -12,20 +11,21 @@
         height 543px
         border-radius 50%
         background #FFD166
-        z-index 2
+        // z-index 2
     &__descr
         width 550px
         margin 0 auto
         margin-bottom 109px
         text-align center
+        position relative
         .title
             margin-bottom 19px
     &__grid
         margin 0 auto 165px
         display flex
+        justify-content center
         flex-wrap wrap
-        row-gap 29px
-        column-gap 20px
+        gap 29px 20px
         &-card
             background #fff
             width 353px
@@ -41,14 +41,13 @@
                 .name
                     padding-left 13px
                     color #1D293F
-                    font-size 18px
+                    // font-size 18px
                 .job 
                     color #7C8087
-                    font-size 13px  
+                    font-size 0.7em
                 .icon
                     position absolute
                     right 0
             .card-text
                 color #7C8087
-                font-size 16px
-               
+                font-size 0.9em

@@ -3,17 +3,10 @@
     overflow hidden
     .container
         display flex
-        flex-basis 550px
         justify-content space-between
-    .circle
-        width 612px
-        height 612px
-        background-color #ffd166
-        border-radius 50%
-        z-index -99
     &__descr
         padding-top 136px
-        width 409px
+        padding-right 10px
         .text
             margin-bottom 58px
         &-list
@@ -22,11 +15,12 @@
             display flex
             align-items center
             margin-bottom 19px
-            font-size 24px
-            line-height 34px
+            font-size 1.3em
+            line-height 1.4
             color #1d293f
             p 
-               font-weight 500 
+               font-family 'Circular Std', Arial, sans-serif
+               font-weight 500
         &-round
             width 59px
             height 59px
@@ -38,6 +32,12 @@
             margin-right 19px
     &__media
         position relative
+        width 60%
+    &-circle
+        width 612px
+        height 612px
+        background-color #ffd166
+        border-radius 50%
     &-img-big
         position absolute
         left 198px
@@ -58,13 +58,14 @@
         transform rotate(-9deg)
         border-radius 15px
         box-shadow -3.345px 31.825px 84px 0px rgba(29, 41, 63, 0.19)
+        animation dance 1.3s ease infinite
 
 .outline
     width 42px
     height 25px
     background-color #ffd166
     border-radius 5px
-    font-size 13px
+    font-size 0.7
     line-height 1.2
     margin-left 15px
     display flex
