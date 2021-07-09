@@ -1054,14 +1054,14 @@ body {
   .place__descr {
     z-index: 1;
   }
-  .place__media {
-    position: absolute;
-  }
   .place__media .frame {
     display: none;
   }
   .place__media img {
     display: none;
+  }
+  .place-circle {
+    position: absolute;
   }
   .work {
     position: relative;
