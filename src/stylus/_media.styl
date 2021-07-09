@@ -196,6 +196,8 @@
 
 
 @media (max-width 576px) 
+    *
+        font-size 12px
     .container 
         width 100%
         padding 0 10px
@@ -224,8 +226,11 @@
         &__text
             width unset
             margin-bottom 40px
-        .carousel
+        &__carousel
             width 80%
+            justify-content center
+            .card:last-child
+                flex none
         &__button
             margin-top 0
     .place
